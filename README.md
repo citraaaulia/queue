@@ -1,1 +1,72 @@
 # queue
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class tugas {
+    public static void main(String[] args) {
+    
+        Queue<String> queueLine = new LinkedList<String>();
+
+        queueLine.add("Laut");
+        queueLine.add("Sunu");
+        queueLine.add("Kinan");
+        queueLine.add("Daniel");
+        queueLine.add("Gusti");
+        queueLine.add("Anjani");
+        queueLine.add("Asmara");
+        queueLine.add("Bram");
+
+        System.out.println("----Antrean Starbucks-----");
+        System.out.println(queueLine);
+        System.out.println("");
+
+        //POLL
+        System.out.println("----menghapus elemen menggunakan POLL----");
+        System.out.println("Customer ke-1 yang selesai memesan adalah " +queueLine.poll());
+        System.out.println("Antrean setelah 1 orang selesai memesan\t:"+queueLine);
+        System.out.println("");
+
+        //PEEK
+        System.out.println("----memanggil elemen di head menggunakan PEEK----");
+        System.out.println("Yang memesan selanjutnya adalah " +queueLine.peek());
+        System.out.println("");
+
+        //POLL
+        System.out.println("----menghapus elemen menggunakan POLL----");
+        queueLine.poll();
+        System.out.println("Maka kondisi antrian sekarang ialah "+queueLine);
+        System.out.println("");
+
+        //REMOVE
+        System.out.println("----menghapus elemen menggunakan REMOVE----");
+        System.out.println("Customer yang batal memesan adalah "+queueLine.remove());
+        System.out.println("Antrian setelah 1 customer sebelumnya batal memesan :"+queueLine);
+        System.out.println("");
+
+        //ISEMPTY
+        System.out.println("----mengecek isi antrian menggunakan ISEMPTY-----");
+        System.out.println("Apakah antrian sudah kosong? "+queueLine.isEmpty());
+        System.out.println("");
+
+        //ELEMENT
+        System.out.println("---memanggil elemen head menggunakan ELEMENT----");
+        System.out.println("Yang berada di antrian paling awal sekarang adalah "+queueLine.element());
+        System.out.println("");
+        
+        //SIZE
+        System.out.println("----mengecek panjang antrian menggunakan SIZE----");
+        System.out.println("Panjang antrian di Starbucks sekarang adalah " +queueLine.size());
+        System.out.println("");
+
+        //CLEAR
+        System.out.println("----menghapus isi queue menggunakan clear----");
+        queueLine.clear();
+
+        //ISEMPTY
+        System.out.println("----mengecek antrian menggunakan ISEMPTY---");
+        System.out.println("antrian pada pukul 23.00 :"+queueLine);
+
+
+    }
+    
+}
